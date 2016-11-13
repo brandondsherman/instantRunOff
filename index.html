@@ -1,38 +1,206 @@
-# Instant run off
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+  margin: 10px 0 15px 0;
+  border-collapse: collapse;
+}
+td,th { 
+  border: 1px solid #ddd;
+  padding: 3px 10px;
+}
+th {
+  padding: 5px 10px;  
+}
 
-Instant run-off or ranked choice voting is a different way for an election to be held.
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+  -webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+  body,code,pre code,h1,h2,h3,h4,h5,h6 {
+    color: black;
+  }
+  table, pre {
+    page-break-inside: avoid;
+  }
+}
+</style>
+<title>Instant run off</title>
 
-In America our current system is called first past the post. This means that the person that gets the majority of the votes wins. You might think that this is the obvious way to hold an election, but it has a lot of shortcomings when it comes to an election with more than two choices. Essentially these flaws boil down to two major flaws. 
+</head>
+<body>
+<h1>Instant run off</h1>
 
-* Any vote not cast for one of the top two candidates is a waste. 
-* It leads to strategic voting where you vote for candidate 2 just because you hate candidate 1 and not because you think candidate 2 is the best choice.
+<p>Instant run-off or ranked choice voting is a different way for an election to be held.</p>
 
-The 2016 main party candidates had the lowest favorability ratings of all time so it's likely that a lot of voters voted strategically. This isn't a particularly satisfying way to vote and has left many wanting.
+<p>In America our current system is called first past the post. This means that the person that gets the majority of the votes wins. You might think that this is the obvious way to hold an election, but it has a lot of shortcomings when it comes to an election with more than two choices. Essentially these flaws boil down to two major flaws.</p>
 
-Instant run-off voting lets you rank the candidates in your preferred order as your vote. Like this.
+<ul>
+<li>Any vote not cast for one of the top two candidates is a waste.</li>
+<li>It leads to strategic voting where you vote for candidate 2 just because you hate candidate 1 and not because you think candidate 2 is the best choice.</li>
+</ul>
 
-1. Harry Johnson
-2. Hillary Duff
-3. Frank N. Stein
-4. HaramBAE
-5. Donald Glover
 
-For this vote, the voter wants Harry Johnson to be the president the most. The second most preferred candidate is Hillary Duff and so on.
+<p>The 2016 main party candidates had the lowest favorability ratings of all time so it's likely that a lot of voters voted strategically. This isn't a particularly satisfying way to vote and has left many wanting.</p>
 
-The way that a winner is chosen follows this:
+<p>Instant run-off voting lets you rank the candidates in your preferred order as your vote. Like this.</p>
 
-a. Tally all of the ranked 1st voters
-b. Does a candidate have 50% or more of these votes? If yes, that candidate wins.
-c. If no, find the candidate with the least votes
-d. All votes at any rank with that candidate are removed and the rest of the candidates are moved up in rank. (If Harry Johnson had the least amount of votes in the above ballot the new order would be 1. Hillary Duff 2. Frank N. Stein, 3. HaramBAE, 4. Donald Glover).
-e. Go back to step a.
+<ol>
+<li>Harry Johnson</li>
+<li>Hillary Duff</li>
+<li>Frank N. Stein</li>
+<li>HaramBAE</li>
+<li>Donald Glover</li>
+</ol>
 
-Instant run-off voting has many advantages. It's textbook criticism is that it's too complicated and the voters won't be able to understand this. While finding the winner is significantly more complicated than first past the post elections, you can still cast a vote in this method without fully understanding this. How hard is it to explain to someone to list the candidates in order?
 
-In Maine's 2016 election they had a question on the ballot to convert their electoral system to instant run-off. Hopefully future successful elections in Maine will inspire more states to switch too!
+<p>For this vote, the voter wants Harry Johnson to be the president the most. The second most preferred candidate is Hillary Duff and so on.</p>
 
-Below is a demonstration of an instant run-off election to help visualize the process.
+<p>The way that a winner is chosen follows this:</p>
 
+<ol type="a">
+<li>Tally all of the ranked 1st voters</li>
+<li>Does a candidate have 50% or more of these votes? If yes, that candidate wins.</li>
+<li>If no, find the candidate with the least votes</li>
+<li>All votes at any rank with that candidate are removed and the rest of the candidates are moved up in rank. (If Harry Johnson had the least amount of votes in the above ballot the new order would be 1. Hillary Duff 2. Frank N. Stein, 3. HaramBAE, 4. Donald Glover).</li>
+<li>Go back to step a.</li>
+</ol>
+
+
+<p>Instant run-off voting has many advantages. It's textbook criticism is that it's too complicated and the voters won't be able to understand this. While finding the winner is significantly more complicated than first past the post elections, you can still cast a vote in this method without fully understanding this. How hard is it to explain to someone to list the candidates in order?</p>
+
+<p>In Maine's 2016 election they had a question on the ballot to convert their electoral system to instant run-off. Hopefully future successful elections in Maine will inspire more states to switch too!</p>
+
+<p>Below is a demonstration of an instant run-off election to help visualize the process.</p>
+</body>
+</html>
 
 <body>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
