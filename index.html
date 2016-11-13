@@ -176,7 +176,7 @@ sup {
 <li>Harry Johnson</li>
 <li>Hillary Duff</li>
 <li>Frank N. Stein</li>
-<li>HaramBAE</li>
+<li>Harambe</li>
 <li>Donald Glover</li>
 </ol>
 
@@ -211,7 +211,7 @@ sup {
         var arr = data.split("\n");
         arr = arr.map(function(x){ return x.split(",")})
         arr = arr.map(function(x){ return x.slice(1,x.length)})
-        console.log(arr);
+        //console.log(arr);
         //debugger
         findCounts(arr);
         dataTable = makeDataTable()
@@ -244,12 +244,29 @@ sup {
           };
           var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
           chart.draw(view, options);
-
+        })
+        $("#negRunoff").on("click",function(memes){
+          dataTable = goBackRunoff();
+          if(dataTable != -3){
+            var data = google.visualization.arrayToDataTable(dataTable);
+                
+            var view = new google.visualization.DataView(data);
+            var options = {
+            width: 700,
+            height: 400,
+            legend: { position: 'top', maxLines: 3 },
+            bar: { groupWidth: '75%' },
+            isStacked: true,
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+            chart.draw(view, options);
+          }
         })
       });
   }
   </script>
   <input type="button" id="runoff" name="dorunoff" value="Do one runoff"></input>
+  <input type="button" id="negRunoff" name="undoRunoff" value="Go back one runoff"></input>
 <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
 </body>
 </html>
