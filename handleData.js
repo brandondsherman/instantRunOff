@@ -12,7 +12,7 @@ makeDataTable = function(){
 	tables["Frank N. Stein"] = [0,0,0,0,0];
 	tables["Harry Johnson"] = [0,0,0,0,0];
 	tables["Harambe"] = [0,0,0,0,0];
-	legend = ["Candidate", "Frank N. Stein","Donald Glover","Harambe","Hilary Duff","Harry Johnson", {role: 'annotation'}];
+	legend = ["Candidate", "Frank N. Stein","Donald Glover","Harambe","Harry Johnson","Hilary Duff",{role: 'annotation'}];
 	Object.keys(candidates).forEach(function(x){
 		tables[x] = Object.values(candidates[x]);
 	})
